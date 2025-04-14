@@ -20,7 +20,4 @@ This project showcases my skills and portfolio, and is structured with a modern 
 
 System Architecture
 
-![image](https://github.com/user-attachments/assets/38c2d9db-c8a1-4c52-a677-8cf9c975a557)
-
-
-
+<img width="1498" alt="sys arch" src="https://github.com/user-attachments/assets/8e659d0e-b2c6-4d1f-9fd9-cb8d23206671" />
