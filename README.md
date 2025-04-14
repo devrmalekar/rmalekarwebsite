@@ -16,3 +16,9 @@ The frontend fetches data from a JSON file stored in a Git repository.
 The backend runs a background service every 15 days to update the JSON file, ensuring fresh content is served.
 
 This project showcases my skills and portfolio, and is structured with a modern tech stack to provide a seamless user experience.
+
+
+System Architecture
+
+![Screenshot (6)](https://github.com/user-attachments/assets/fa74e07f-9f33-43de-8c5f-0e11fde21cf9)
+
