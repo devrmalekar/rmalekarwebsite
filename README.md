@@ -20,5 +20,6 @@ This project showcases my skills and portfolio, and is structured with a modern 
 
 System Architecture
 
-![System Architecture of www.rmalekar.com.np](https://github.com/user-attachments/assets/fa74e07f-9f33-43de-8c5f-0e11fde21cf9)
+![system architecture](https://github.com/user-attachments/assets/58e535b4-2468-4c31-8259-7440cb2c86db)
+
 
