@@ -1,0 +1,98 @@
+
+.timeline {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+    padding-left: 2rem;
+}
+
+    .timeline::before {
+        /* content: '';
+        position: absolute;
+        top: 0;
+        left: 1rem;
+        height: 100%;
+        width: 2px;
+        background: var(--primary-color);*/
+
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0%;
+        width: 4px;
+        margin-left: -2px;
+        background-color: var(--primary-color);
+    }
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 2rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+    .timeline-item::before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        width: 1rem;
+        height: 1rem;
+        border-radius: 50%;
+        background-color: #FFFFFF;
+        border: 3px solid var(--primary-color);
+        z-index: 1;
+        left: -2.5rem;
+    }
+
+
+    .timeline-item.last {
+        margin-bottom: 0;
+    }
+
+    .timeline-item:hover {
+        transform: translateY(-0.5rem);
+        box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+    }
+
+.timeline-content {
+    background: #f8f9fa;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.05);
+}
+
+.timeline-header h3 {
+    margin: 0 0 0.5rem 0;
+    color: var(--dark-color);
+}
+
+.timeline-company .timeline-institute {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    color: #666;
+}
+
+.timeline-duration {
+    background: var(--primary-color);
+    color: white;
+    padding: 0.2rem 0.8rem;
+    border-radius: 1rem;
+    font-size: 0.8rem;
+}
+
+.timeline-body ul {
+    padding-left: 1.2rem;
+}
+
+.timeline-body li {
+    margin-bottom: 0.5rem;
+    line-height: 1.6;
+}
+
+@media(max-width:800px)
+{
+    .td-container {
+        width: 100%;
+    }
+}

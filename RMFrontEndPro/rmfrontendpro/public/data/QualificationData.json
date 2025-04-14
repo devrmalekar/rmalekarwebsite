@@ -1,0 +1,37 @@
+{
+  "Master": {
+    "Degree": "Master of Information Technology (Software Design and Development",
+    "StartDate": "Mar 2020",
+    "EndDate": "Oct 2021",
+    "Institute": "Charles Sturt University",
+    "Addr": "Australia",
+    "KeySubjects": "Programming Principle;Database System;Programming in Java;Android App Development;ICT Project Management;Linux Server Admin;System Analyst",
+    "Projects": [
+      {
+        "ProjectTitle": "Blood Donor App",
+        "ProjectSummary": "A Java-based Android application to register users and track their blood donation records. The app leverage\u2019s geo-location services to list eligible blood donors nearby and allows users to send donation requests.",
+        "Skills": "Java;ER Diagram;XAMPP;OOP;Solid Principles;Debugging \u0026 Bug Fixing;Business \u0026 Technical Analysis;System Design;ER Diagram;Android Studio;Spring Boot;RESTful APIs;MySql"
+      }
+    ]
+  },
+  "Bachelor": {
+    "Degree": "Bachelor of Science in Information Technology",
+    "StartDate": "Feb 2012",
+    "EndDate": "Apr 2015",
+    "Institute": "College for Professional Studies",
+    "Addr": "Nepal",
+    "KeySubjects": "Software Engineering;OOPS with Java;Server Side Programming;C# Programming;RDBMS with MySQL;Discrete Mathematics;Software Project Management",
+    "Projects": [
+      {
+        "ProjectTitle": "Online Voting System",
+        "ProjectSummary": "This is a PHP core web application project which interacts with MySQL database to validate voters from available list and cast their vote, where each voters is identified uniquely by their voter id card number.",
+        "Skills": "PHP;XAMPP;CSS3;HTML5;jQuery;ER Diagram;Waterfall;MySql"
+      },
+      {
+        "ProjectTitle": "Hotel Management System",
+        "ProjectSummary": "This is a PHP core web application project which interacts with MySQL database to validate voters from available list and cast their vote, where each voters is identified uniquely by their voter id card number.",
+        "Skills": "OOP;Waterfall;Spring Boot;Dot NET Core;C#"
+      }
+    ]
+  }
+}

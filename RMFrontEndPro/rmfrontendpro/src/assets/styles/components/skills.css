@@ -1,0 +1,119 @@
+
+/* Import Devicon CSS */
+@import "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css";
+
+.skills-section {
+    padding: 80px 0;
+    background-color: #f8f9fa;
+}
+
+.skills-categories {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.category-btn {
+    padding: 8px 20px;
+    border: 2px solid var(--primary-color);
+    background: transparent;
+    color: var(--primary-color);
+    border-radius: 30px;
+    transition: all 0.3s ease;
+    font-weight: 600;
+}
+
+    .category-btn.active {
+        background: var(--primary-color);
+        color: white;
+    }
+
+
+.skills-container {
+    margin: 0 auto;
+    padding: 0rem;
+    display: block;
+}
+
+
+.sub-category {
+    border-left: 4px solid var(--primary-color);
+    border-right: 4px solid var(--primary-color);
+    border-radius: 1em;
+    padding: 1rem;
+    margin: 2rem;
+    display: inline-block;
+    background: #f8f9fa;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.sub-category:hover {
+    transform: translateY(-0.5rem);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+}
+
+
+
+.skill-icon {
+    font-size: clamp(2rem, 3vw, 3rem);
+    color: var(--primary-color) !important;
+    text-align: center !important;
+}
+
+
+
+.skill-item {
+    display: inline-grid;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.4rem 1.2rem;
+    background: #f8f9fa;
+    border-radius: 20px;
+    white-space: nowrap;
+}
+
+.skill-item span{
+    text-align: center
+}
+
+    .skill-item.hard {
+        /* border-right: 4px solid #1976d2;*/
+    }
+
+    .skill-item.soft {
+        border-left: 4px solid #388e3c;
+    }
+
+/* Devicon adjustments */
+.devicon {
+    font-size: 1.2em;
+}
+
+/* Font Awesome adjustments */
+.soft-skill-icon {
+    color: #388e3c;
+    font-size: 1.2em;
+}
+
+@media (max-width: 768px) {
+    .icons-row, .skills-row {
+        justify-content: center;
+    }
+
+    .skill-item {
+        flex: 1 0 calc(50% - 0.8rem);
+        max-width: calc(50% - 0.8rem);
+    }
+}
+
+@media (max-width: 480px) {
+    .skill-item {
+        flex: 1 0 100%;
+        max-width: 100%;
+    }
+}

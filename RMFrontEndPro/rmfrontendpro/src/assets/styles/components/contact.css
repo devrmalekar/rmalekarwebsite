@@ -1,0 +1,123 @@
+.contact-section {
+    padding: 5rem 0;
+    background-color: #f8f9fa;
+}
+
+.contact-info {
+    background: white;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.05);
+    height: 100%;
+}
+
+    .contact-info h3 {
+        color: var(--dark-color);
+        margin-bottom: 1.5rem;
+        position: relative;
+        padding-bottom: 0.5rem;
+    }
+
+        .contact-info h3::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 50px;
+            height: 2px;
+            background: var(--primary-color);
+        }
+
+    .contact-info ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    .contact-info li {
+        margin-bottom: 1rem;
+        display: flex;
+        align-items: center;
+    }
+
+    .contact-info i {
+        color: var(--primary-color);
+        width: 1.5rem;
+        text-align: center;
+    }
+
+.social-links {
+    margin-top: 2rem;
+    display: flex;
+    gap: 1rem;
+    z-index: 1;
+}
+
+    .social-links a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 2.5rem;
+        height: 2.5rem;
+        background: var(--primary-color);
+        color: white !important;
+        border-radius: 50%;
+        transition: all 0.3s ease;
+    }
+
+        .social-links a:hover {
+            background: var(--light-color);
+            transform: translateY(-0.3rem);
+        }
+
+        .social-links a i {
+            color: var(--light-color);
+        }
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-control {
+    width: 100%;
+    padding: 0.8rem 1rem;
+    border: 1px solid #ddd;
+    border-radius: 0.3rem;
+    transition: border 0.3s ease;
+}
+
+    .form-control:focus {
+        outline: none;
+        border-color: var(--primary-color);
+    }
+
+.submit-btn {
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 0.8rem 2rem;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+    .submit-btn:hover {
+        background: var(--dark-color);
+    }
+
+.response-message {
+    display: grid;
+    place-content: center;
+    /* margin-top: 4rem; */
+    font-weight: bold;
+    color: var(--primary-color);
+}
+    @media(max-width: 991px)
+    {
+        form.contact-form {
+            margin-top: 4rem;
+        }
+
+        .response-message {
+            margin-top: 4rem;
+        }
+    }

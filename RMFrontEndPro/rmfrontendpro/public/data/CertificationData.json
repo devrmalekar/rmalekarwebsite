@@ -1,0 +1,106 @@
+[
+  {
+    "Id": 1,
+    "Title": "Foundational C# with Microsoft",
+    "Issuer": "freeCodeCamp",
+    "Url": "https://www.freecodecamp.org/certification/iamrehmanmalekar/foundational-c-sharp-with-microsoft",
+    "Img": "/public/images/cert/Foundational-c-sharp-with-microsoft-032024.png",
+    "Date": "2024-03-11"
+  },
+  {
+    "Id": 2,
+    "Title": "C# and .NET",
+    "Issuer": "TestDome",
+    "Url": "https://www.testdome.com/certificates/27c3fb353e0c4d78a8f3bd1ce485422e",
+    "Img": "/public/images/cert/C-sharp-and-dot-net-26032024.png",
+    "Date": "2024-02-26"
+  },
+  {
+    "Id": 3,
+    "Title": "C#",
+    "Issuer": "TestDome",
+    "Url": "https://www.testdome.com/certificates/27c3fb353e0c4d78a8f3bd1ce485422e",
+    "Img": "/public/images/cert/C-sharp-26032024.png",
+    "Date": "2024-02-26"
+  },
+  {
+    "Id": 4,
+    "Title": "SQL (Basic),",
+    "Issuer": "HackerRank",
+    "Url": "https://www.hackerrank.com/certificates/86f4226c31b7",
+    "Img": "/public/images/cert/sql-basic-hackerrank-20230504.png",
+    "Date": "2023-05-04"
+  },
+  {
+    "Id": 5,
+    "Title": "SQL (Intermediate),",
+    "Issuer": "HackerRank",
+    "Url": "https://www.hackerrank.com/certificates/0051cc9b16ec",
+    "Img": "/public/images/cert/sql-intermediate-hackerrank-20230504.png",
+    "Date": "2023-05-04"
+  },
+  {
+    "Id": 6,
+    "Title": "Problem Solving (Basic),",
+    "Issuer": "HackerRank",
+    "Url": "https://www.hackerrank.com/certificates/7e2d69d006fb",
+    "Img": "/public/images/cert/problem-solving-hackerrank-20230504.png",
+    "Date": "2023-05-04"
+  },
+  {
+    "Id": 7,
+    "Title": "C# (Basic),",
+    "Issuer": "HackerRank",
+    "Url": "https://www.hackerrank.com/certificates/3036963464ad",
+    "Img": "/public/images/cert/c-sharp-basic-hackerrank-20230428.png",
+    "Date": "2023-04-28"
+  },
+  {
+    "Id": 8,
+    "Title": "Java (Basic),",
+    "Issuer": "HackerRank",
+    "Url": "https://www.hackerrank.com/certificates/e843fcced8a6",
+    "Img": "/public/images/cert/java-basic-hackerrank-20230504.png",
+    "Date": "2023-04-28"
+  },
+  {
+    "Id": 9,
+    "Title": "Work Effectively in Business Environment",
+    "Issuer": "Readygrad",
+    "Url": "https://www.linkedin.com/in/devrmalekar/details/certifications/1732015446859/single-media-viewer?type=DOCUMENT\u0026profileId=ACoAACW27EMB6gFnKkL2zzkD_r3EkLrNtYJOLQw\u0026lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3B3e1vU84ETLmrykZjZZqnmw%3D%3D",
+    "Img": "/public/images/cert/BSBOP201.png",
+    "Date": "2022-07-22"
+  },
+  {
+    "Id": 10,
+    "Title": "Object-Oriented Programming with Java",
+    "Issuer": "LinkedIn",
+    "Url": "https://www.linkedin.com/learning/certificates/ed779da8d20875357308772a9533c5f063c21dfdc2630e704c6c20234fa2fb5a?trk=backfilled_certificate\u0026lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3BFVzYISceQbC16kRNzdqU8g%3D%3D",
+    "Img": "/public/images/cert/oop-with-java-linkedin-20220206.png",
+    "Date": "2022-02-06"
+  },
+  {
+    "Id": 11,
+    "Title": "Advanced Java Programming",
+    "Issuer": "LinkedIn",
+    "Url": "https://www.linkedin.com/learning/certificates/47fc6a7f832c352227a6c4a65abfce84996a6bd0716302150650a7045b53a8e1?trk=backfilled_certificate\u0026lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3BFVzYISceQbC16kRNzdqU8g%3D%3D",
+    "Img": "/public/images/cert/advanced-java-programming-linkedin-20220124.png",
+    "Date": "2022-01-24"
+  },
+  {
+    "Id": 12,
+    "Title": "Introduction to Data Structure \u0026 Algorithms in Java",
+    "Issuer": "LinkedIn",
+    "Url": "https://www.linkedin.com/learning/certificates/e36c21e101603d236f44df9cfa7c789cfa6497f4d1e0c0fd992b217a67400b9f?trk=backfilled_certificate\u0026lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3BFVzYISceQbC16kRNzdqU8g%3D%3D",
+    "Img": "/public/images/cert/intro-to-ds-and-algo-java-linkedin-20220131.png",
+    "Date": "2022-01-31"
+  },
+  {
+    "Id": 13,
+    "Title": "Learning Java",
+    "Issuer": "LinkedIn",
+    "Url": "https://www.linkedin.com/learning/certificates/22bff5dd90edce1dfa051a17b75db43bfc35b69ad0e7e756a2a887fa20952359?trk=backfilled_certificate",
+    "Img": "/public/images/cert/learning-java-linkedin-20220120.png",
+    "Date": "2022-01-20"
+  }
+]

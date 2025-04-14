@@ -1,0 +1,30 @@
+[
+  {
+    "Title": "CorePHP-NGO-Website-and-Backend",
+    "Description": "A simple and elegant website built with Laravel for NGOs or INGOs, featuring public-facing site and an admin backend. Allow easy content management, project/event updates and information sharing, tailored for non-profit organizations to maintain a strong online presence.",
+    "CodeLink": "https://github.com/devrmalekar/CorePHP-NGO-Website-and-Backend",
+    "Thumbnail": "core-php-mysql-ngo.png",
+    "Skills": "Laravel,HTML5,CSS3,Bootstrap,MySql,Waterfall,jQuery,PHP"
+  },
+  {
+    "Title": "CorePHP-RealEstate-Website-and-Backend",
+    "Description": "A basic real estate website prototype built using core php, featuring a simple frontend and backend system. It includes early-stage implementation of user authentication, basic property listing, property rating, role based access",
+    "CodeLink": "https://github.com/devrmalekar/CorePHP-RealEstate-Website-and-Backend.git",
+    "Thumbnail": "core-php-mysql-realestate.png",
+    "Skills": "jQuery,Waterfall,MySql,Bootstrap,CSS3,HTML5,PHP"
+  },
+  {
+    "Title": "Laravel-NPL-IPO-Result-QuickCheck-Family",
+    "Description": "A simple Laravel-based web application to check IPO allotment results in Nepal for multiple people (like family and relatives) with a single click. Built to save time and avoid manually checking individual results for a large list of applicants.",
+    "CodeLink": "https://github.com/devrmalekar/Laravel-NPL-IPO-Result-QuickCheck-Family.git",
+    "Thumbnail": "laravel-ipo-result.png",
+    "Skills": "Bootstrap,jQuery,Waterfall,MySql,CSS3,HTML5,Laravel,PHP"
+  },
+  {
+    "Title": "Java-Console-SendMail",
+    "Description": "A simple Java console app that allows users to send emails directly from the terminal. This application utilize the JavaMail Api to send emails through SMTP server.",
+    "CodeLink": "https://github.com/devrmalekar/Java-Console-SendMail.git",
+    "Thumbnail": "java-console-sendmail.png",
+    "Skills": "Java"
+  }
+]

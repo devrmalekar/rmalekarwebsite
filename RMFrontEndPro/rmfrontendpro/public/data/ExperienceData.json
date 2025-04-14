@@ -1,0 +1,74 @@
+[
+  {
+    "Position": "Junior Developer",
+    "CompanyName": "Emerrge Pvt. Ltd.",
+    "CompanyAddr": "Melbourne, Victoria, Australia",
+    "StartDate": "Feb 2023",
+    "EndDate": "Mar 2023",
+    "Duties": "Developing clean, maintainable, and testable code using PHP Laravel and MySQL for backend, and jQuery for frontend.;Building a report generation tool that are relevant to AVETMISS standard, enhancing compliance and data accuracy.;Implementing an optimized Ansible solution integrated with Laravel applications, demonstrating skills in modern DevOps practices.;Collaborating with cross-functional teams to understand system requirements and deliver effective solutions, aligning with ITIL-centric environments.",
+    "KeySkills": "MSSQL;Laravel Blade;jQuery;Business \u0026 Technical Analysis;Agile Methodology;Team Collaboration;Report Analysis;Laravel",
+    "ProjectTitle": "Student Management System;AnsibleOps for SMS",
+    "ProjectSummary": "Developed a report generation tool for a comprehensive cloud-based school management solution in the VET industry. Utilized framework such as barryvdh/Laravel-dompdf and maatwebsite/Laravel-excel to write clean, maintainable and testable code including a static class for AVETMISS rule validation. ;Developed an Ansible project for automated infrastructure management and deployment solution to streamline DevOps workflow.",
+    "Type": "Related"
+  },
+  {
+    "Position": "Professional Interns",
+    "CompanyName": "Readygrad Pvt. Ltd.",
+    "CompanyAddr": "Melbourne, Victoria, Australia",
+    "StartDate": "May 2022",
+    "EndDate": "Jul 2022",
+    "Duties": "Engaging in work-integrated learning.;Building workplace relationships and professional habits;Participating in business meetings and team collaborations.;Enhancing professional workplace communication skills.",
+    "KeySkills": "Team Collaboration;Work Integrated Learnin;Work Ethics;Workplace Communication;Time Management ;Prioritizing",
+    "ProjectTitle": null,
+    "ProjectSummary": null,
+    "Type": "Related"
+  },
+  {
+    "Position": "C# Developer",
+    "CompanyName": "Silent Turtle Pvt. Ltd.",
+    "CompanyAddr": "Kathmandu, Nepal",
+    "StartDate": "Dec 2017",
+    "EndDate": "Jan 2019",
+    "Duties": "Engaging in the development of clean and maintainable code;Maintaining regular communication with stakeholders within Agile deliveries.;Building RESTful APIs using ASP.NET Web API (C#) to enable seamless communication between front-end and back-end systems.;Designing and implementing scalable, secure, and well-documented APIs the .NET framework, Entity Framework and ASP.NET.;Collaborating with cross-functional teams to gather requirements, optimize performance, and deliver robust solutions that enhanced user experience and system functionality.",
+    "KeySkills": "OOP;Team Collaboration;Agile Methodology;Solid Principles;Bootstrap;CSS3;jQuery;C#;ASP.NET;Dot NET Core;MSSQL;MySql;HTML5;RESTful APIs;IIS",
+    "ProjectTitle": "Restaurant Management System",
+    "ProjectSummary": "Developed the web app to run on LAN using ASP.NET Web API C# and Entity Framework for backend functionality, featuring key modules like order management, inventory tracking and customer billing. The system utilized MySQL for efficient database management and integrated jQuery, HTMl5 and Bootstrap to create a responsive and intuitive front-end interface. And deployment solution.",
+    "Type": "Related"
+  },
+  {
+    "Position": "Software Developer",
+    "CompanyName": "Elite Technologies Pvt. Ltd.",
+    "CompanyAddr": "Kathmandu, Nepal",
+    "StartDate": "Aug 2015",
+    "EndDate": "Nov 2017",
+    "Duties": "Understanding the project, user requirements and system specification, by collaborating with stakeholders to gather and analyze requirements, translating business needs to technical speficications, documenting system requirements and workflows.;Understanding the work culture and code flow in a project by adapting to the team\u0027s development practices, coding standards and participating in code reviews to understand best practices and improve code quality;Understanding the power of PL/SQL;Identifying, analyzing and resolving bugs in the Projects.;Collaborate with team members to reproduce and verify bugs.",
+    "KeySkills": "jQuery;Laravel;MSSQL;Debugging \u0026 Bug Fixing;Team Collaboration;Agile Methodology;Business \u0026 Technical Analysis;Laravel Blade",
+    "ProjectTitle": null,
+    "ProjectSummary": null,
+    "Type": "Related"
+  },
+  {
+    "Position": "Team Member",
+    "CompanyName": "Woolworths Supermarket",
+    "CompanyAddr": "Sydney, NSW, Australia",
+    "StartDate": "Oct 2023",
+    "EndDate": null,
+    "Duties": "Providing excellent customer service by guiding them to locate products, addressing inquiries and resolving issues promptly and professionally.;Reporting incidents or operational issues to the manager to ensure smooth store operations.;Arranging and restocking products on the shop floor, ensuring an attractive and well-organized front-end display to enhance the shopping experience.;Arranging the products in cold room grouping by sections for easy finding.;Maintaining cleanliness and hygiene standards throughout the shop floor as well as the department\u00E2\u20AC\u2122s cold room.;Monitoring product quality by identifying and removing molded or expired items, ensuring only fresh and high-quality products are available for customers.;Participating in team huddles to stay informed about business goals, share updates and address any department-specific issues or challenges.",
+    "KeySkills": "Time Management ;Attention to Detail;Discipline;Inventory Management;Problem Solving;Work Ethics;Workplace Communication;Team Collaboration",
+    "ProjectTitle": null,
+    "ProjectSummary": null,
+    "Type": "Additional"
+  },
+  {
+    "Position": "Team Member",
+    "CompanyName": "Coles Supermarket",
+    "CompanyAddr": "Sydney, NSW, Australia",
+    "StartDate": "Feb 2024",
+    "EndDate": null,
+    "Duties": "Providing excellent customer service by guiding them to locate products, addressing inquiries and resolving issues promptly and professionally;Reporting incidents or operational issues to the manager to ensure smooth store operations.;Arranging and restocking products on the shop floor, ensuring an attractive and well-organized front-end display to enhance the shopping experience.;Arranging the products in cold room grouping by sections for easy finding.;Maintaining cleanliness and hygiene standards throughout the shop floor as well as the department\u00E2\u20AC\u2122s cold room.;Monitoring product quality by identifying and removing molded or expired items, ensuring only fresh and high-quality products are available for customers.;Participating in team huddles to stay informed about business goals, share updates and address any department-specific issues or challenges.",
+    "KeySkills": "Team Collaboration;Workplace Communication;Time Management ;Work Ethics;Problem Solving;Inventory Management;Discipline;Attention to Detail",
+    "ProjectTitle": null,
+    "ProjectSummary": null,
+    "Type": "Additional"
+  }
+]

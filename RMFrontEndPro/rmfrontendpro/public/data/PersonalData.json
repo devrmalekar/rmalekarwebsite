@@ -1,0 +1,16 @@
+{
+  "FirstName": "Rehman",
+  "LastName": "Malekar",
+  "Summary": "Full Stack Developer with a Master\u2019s in IT (Software Design and Development) and experience in .NET, C#, jQuery, JavaScript, REST APIs and SQL. Passionate about building scalable and efficient applications.",
+  "Contact": {
+    "email": "dev@rmalekar.com.np",
+    "mobile": "\u002B61 415 824 12",
+    "address": "Australia"
+  },
+  "SocialLinks": {
+    "github": "https://github.com/devrmalekar",
+    "linkedin": "https://www.linkedin.com/in/devrmalekar",
+    "hackerrank": "https://www.hackerrank.com/profile/rmalekar1992"
+  },
+  "ExperienceYears": 3
+}

@@ -1,0 +1,33 @@
+.about-section {
+    padding: 5rem 0;
+    background-color: white;
+}
+
+.about-content p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 2rem;
+    color: #555;
+}
+
+.personal-info {
+    background: #f8f9fa;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+}
+
+.info-item {
+    display: flex;
+    margin-bottom: 0.8rem;
+}
+
+    .info-item span:first-child {
+        font-weight: 600;
+        min-width: 120px;
+        color: var(--dark-color);
+    }
+
+.about-image {
+    position: relative;
+    overflow: auto;
+}

@@ -1,0 +1,337 @@
+{
+  "Core Technical Skills": {
+    "Languages": [
+      {
+        "Skill": "C#",
+        "SkillType": "Hard",
+        "SkillLogo": "devicon-csharp-plain colored",
+        "SubCatName": "Languages",
+        "CatName": "Core Technical Skills"
+      },
+      {
+        "Skill": "Java",
+        "SkillType": "Hard",
+        "SkillLogo": "devicon-java-plain colored",
+        "SubCatName": "Languages",
+        "CatName": "Core Technical Skills"
+      },
+      {
+        "Skill": "PHP",
+        "SkillType": "Hard",
+        "SkillLogo": "devicon-php-plain colored",
+        "SubCatName": "Languages",
+        "CatName": "Core Technical Skills"
+      }
+    ],
+    "Frameworks": [
+      {
+        "Skill": "Laravel",
+        "SkillType": "Hard",
+        "SkillLogo": "devicon-laravel-original colored",
+        "SubCatName": "Frameworks",
+        "CatName": "Core Technical Skills"
+      },
+      {
+        "Skill": "ASP.NET",
+        "SkillType": "Hard",
+        "SkillLogo": "devicon-dot-net-plain-wordmark colored",
+        "SubCatName": "Frameworks",
+        "CatName": "Core Technical Skills"
+      },
+      {
+        "Skill": "Dot NET Core",
+        "SkillType": "Hard",
+        "SkillLogo": "devicon-dotnetcore-plain colored",
+        "SubCatName": "Frameworks",
+        "CatName": "Core Technical Skills"
+      },
+      {
+        "Skill": "Spring Boot",
+        "SkillType": "Hard",
+        "SkillLogo": "devicon-spring-original",
+        "SubCatName": "Frameworks",
+        "CatName": "Core Technical Skills"
+      }
+    ],
+    "Frontend": [
+      {
+        "Skill": "HTML5",
+        "SkillType": "Hard",
+        "SkillLogo": "devicon-html5-plain colored",
+        "SubCatName": "Frontend",
+        "CatName": "Core Technical Skills"
+      },
+      {
+        "Skill": "CSS3",
+        "SkillType": "Hard",
+        "SkillLogo": "devicon-css3-plain colored",
+        "SubCatName": "Frontend",
+        "CatName": "Core Technical Skills"
+      },
+      {
+        "Skill": "Bootstrap",
+        "SkillType": "Hard",
+        "SkillLogo": "fa-solid fa-bootstrap",
+        "SubCatName": "Frontend",
+        "CatName": "Core Technical Skills"
+      },
+      {
+        "Skill": "Laravel Blade",
+        "SkillType": "Hard",
+        "SkillLogo": "fa-solid fa-laravel",
+        "SubCatName": "Frontend",
+        "CatName": "Core Technical Skills"
+      },
+      {
+        "Skill": "jQuery",
+        "SkillType": "Hard",
+        "SkillLogo": "devicon-jquery-plain",
+        "SubCatName": "Frontend",
+        "CatName": "Core Technical Skills"
+      }
+    ],
+    "Databases": [
+      {
+        "Skill": "MySql",
+        "SkillType": "Hard",
+        "SkillLogo": "devicon-mysql-plain-wordmark colored",
+        "SubCatName": "Databases",
+        "CatName": "Core Technical Skills"
+      },
+      {
+        "Skill": "MSSQL",
+        "SkillType": "Hard",
+        "SkillLogo": "devicon-microsoftsqlserver-plain colored",
+        "SubCatName": "Databases",
+        "CatName": "Core Technical Skills"
+      }
+    ],
+    "APIs \u0026 Servers": [
+      {
+        "Skill": "RESTful APIs",
+        "SkillType": "Hard",
+        "SkillLogo": "fas fa-network-wired",
+        "SubCatName": "APIs \u0026 Servers",
+        "CatName": "Core Technical Skills"
+      },
+      {
+        "Skill": "SOAP Services",
+        "SkillType": "Hard",
+        "SkillLogo": "fa-solid fa-server",
+        "SubCatName": "APIs \u0026 Servers",
+        "CatName": "Core Technical Skills"
+      }
+    ]
+  },
+  "Software Engineering \u0026 Best Practices": {
+    "Programming Principle": [
+      {
+        "Skill": "Solid Principles",
+        "SkillType": "Hard",
+        "SkillLogo": "fa-slid fa-layer-group",
+        "SubCatName": "Programming Principle",
+        "CatName": "Software Engineering \u0026 Best Practices"
+      },
+      {
+        "Skill": "OOP",
+        "SkillType": "Hard",
+        "SkillLogo": "fa-solid fa-object-group",
+        "SubCatName": "Programming Principle",
+        "CatName": "Software Engineering \u0026 Best Practices"
+      }
+    ],
+    "SDLC": [
+      {
+        "Skill": "Agile Methodology",
+        "SkillType": "Hard",
+        "SkillLogo": "fas fa-sync-alt",
+        "SubCatName": "SDLC",
+        "CatName": "Software Engineering \u0026 Best Practices"
+      },
+      {
+        "Skill": "Waterfall",
+        "SkillType": "Hard",
+        "SkillLogo": "fa-solid fa-list-check",
+        "SubCatName": "SDLC",
+        "CatName": "Software Engineering \u0026 Best Practices"
+      }
+    ],
+    "Technical Diagram": [
+      {
+        "Skill": "Use Case Diagram",
+        "SkillType": "Hard",
+        "SkillLogo": "fas fa-sitemap",
+        "SubCatName": "Technical Diagram",
+        "CatName": "Software Engineering \u0026 Best Practices"
+      },
+      {
+        "Skill": "ER Diagram",
+        "SkillType": "Hard",
+        "SkillLogo": "fas fa-database",
+        "SubCatName": "Technical Diagram",
+        "CatName": "Software Engineering \u0026 Best Practices"
+      },
+      {
+        "Skill": "System Design",
+        "SkillType": "Hard",
+        "SkillLogo": "fas fa-project-diagram",
+        "SubCatName": "Technical Diagram",
+        "CatName": "Software Engineering \u0026 Best Practices"
+      }
+    ]
+  },
+  "Problem-Solving \u0026 Analysis": {
+    "Problem Solving \u0026 An": [
+      {
+        "Skill": "Business \u0026 Technical Analysis",
+        "SkillType": "Hard",
+        "SkillLogo": "fas fa-chart-line",
+        "SubCatName": "Problem Solving \u0026 An",
+        "CatName": "Problem-Solving \u0026 Analysis"
+      },
+      {
+        "Skill": "Debugging \u0026 Bug Fixing",
+        "SkillType": "Hard",
+        "SkillLogo": "fas fa-code",
+        "SubCatName": "Problem Solving \u0026 An",
+        "CatName": "Problem-Solving \u0026 Analysis"
+      },
+      {
+        "Skill": "Report Analysis",
+        "SkillType": "Hard",
+        "SkillLogo": "fas fa-file-alt",
+        "SubCatName": "Problem Solving \u0026 An",
+        "CatName": "Problem-Solving \u0026 Analysis"
+      }
+    ]
+  },
+  "Tools \u0026 Environment": {
+    "IDE": [
+      {
+        "Skill": "Android Studio",
+        "SkillType": "Hard",
+        "SkillLogo": "devicon-androidstudio-plain colored\u0027",
+        "SubCatName": "IDE",
+        "CatName": "Tools \u0026 Environment"
+      },
+      {
+        "Skill": "Visual Studio",
+        "SkillType": "Hard",
+        "SkillLogo": "devicon-visualstudio-plain colored",
+        "SubCatName": "IDE",
+        "CatName": "Tools \u0026 Environment"
+      },
+      {
+        "Skill": "JetBrains PHPStorm",
+        "SkillType": "Hard",
+        "SkillLogo": "devicon-phpstorm-plain colored",
+        "SubCatName": "IDE",
+        "CatName": "Tools \u0026 Environment"
+      },
+      {
+        "Skill": "Visual Studio Code",
+        "SkillType": "Hard",
+        "SkillLogo": "devicon-vscode-plain-wordmark colored",
+        "SubCatName": "IDE",
+        "CatName": "Tools \u0026 Environment"
+      }
+    ],
+    "Servers": [
+      {
+        "Skill": "IIS",
+        "SkillType": "Hard",
+        "SkillLogo": "fas fa-server",
+        "SubCatName": "Servers",
+        "CatName": "Tools \u0026 Environment"
+      },
+      {
+        "Skill": "Apache Tomcat",
+        "SkillType": "Hard",
+        "SkillLogo": "devicon-apache-plain",
+        "SubCatName": "Servers",
+        "CatName": "Tools \u0026 Environment"
+      },
+      {
+        "Skill": "XAMPP",
+        "SkillType": "Hard",
+        "SkillLogo": "fas fa-server",
+        "SubCatName": "Servers",
+        "CatName": "Tools \u0026 Environment"
+      }
+    ]
+  },
+  "Soft Skills": {
+    "Soft Skills": [
+      {
+        "Skill": "Team Collaboration",
+        "SkillType": "Soft",
+        "SkillLogo": "fas fa-users",
+        "SubCatName": "Soft Skills",
+        "CatName": "Soft Skills"
+      },
+      {
+        "Skill": "Work Integrated Learnin",
+        "SkillType": "Soft",
+        "SkillLogo": "fas fa-chalkboard-teacher",
+        "SubCatName": "Soft Skills",
+        "CatName": "Soft Skills"
+      },
+      {
+        "Skill": "Work Ethics",
+        "SkillType": "Soft",
+        "SkillLogo": "fas fa-handshake",
+        "SubCatName": "Soft Skills",
+        "CatName": "Soft Skills"
+      },
+      {
+        "Skill": "Workplace Communication",
+        "SkillType": "Soft",
+        "SkillLogo": "fas fa-comment",
+        "SubCatName": "Soft Skills",
+        "CatName": "Soft Skills"
+      },
+      {
+        "Skill": "Time Management ",
+        "SkillType": "Soft",
+        "SkillLogo": "fas fa-clock",
+        "SubCatName": "Soft Skills",
+        "CatName": "Soft Skills"
+      },
+      {
+        "Skill": "Prioritizing",
+        "SkillType": "Soft",
+        "SkillLogo": "fas fa-tasks",
+        "SubCatName": "Soft Skills",
+        "CatName": "Soft Skills"
+      },
+      {
+        "Skill": "Attention to Detail",
+        "SkillType": "Soft",
+        "SkillLogo": "fas fa-eye",
+        "SubCatName": "Soft Skills",
+        "CatName": "Soft Skills"
+      },
+      {
+        "Skill": "Discipline",
+        "SkillType": "Soft",
+        "SkillLogo": "fas fa-check-circle",
+        "SubCatName": "Soft Skills",
+        "CatName": "Soft Skills"
+      },
+      {
+        "Skill": "Inventory Management",
+        "SkillType": "Soft",
+        "SkillLogo": "fas fa-boxes",
+        "SubCatName": "Soft Skills",
+        "CatName": "Soft Skills"
+      },
+      {
+        "Skill": "Problem Solving",
+        "SkillType": "Soft",
+        "SkillLogo": "fas fa-lightbulb",
+        "SubCatName": "Soft Skills",
+        "CatName": "Soft Skills"
+      }
+    ]
+  }
+}
