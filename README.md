@@ -86,4 +86,4 @@ Domain has it's own email setup configured correctly with required **DMRAC**, **
 
 ## **Authors and Acknowledgment**
 
-Created by **[Rehman Malekare](https://www.rmalekar.com.np)**.
+Created by **[Rehman Malekar](https://www.rmalekar.com.np)**.
