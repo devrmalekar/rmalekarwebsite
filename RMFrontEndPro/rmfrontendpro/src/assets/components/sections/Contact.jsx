@@ -17,7 +17,7 @@ const Contact = ({ personalData, getSocialLinks }) => {
             Message: e.target.message.value
         };
 
-        fetch('https://rmalekar-com-np-backend.onrender.com/email/sendemail', {
+        fetch('https://webapi.rmalekar.com.np/email/sendemail', {
             method: 'POST',
             headers: { 'content-type': 'application/json' },
             body: JSON.stringify(formData)
