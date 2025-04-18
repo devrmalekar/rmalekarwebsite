@@ -7,7 +7,7 @@ This project is source code of my developer portfolio website [Rehman's Portfoli
 This is the source code for my personal portfolio website: www.rmalekar.com.np. The website is built with the following technologies:
 This whole project is built on **__Microsoft Visual Studio 2022__** IDE and has two project solutions:
 
-Frontend: React ===> RMFrontEnd solution
+
 **1. RMFrontEndPro** : __This is React App which is based on JavaScript. It fetch the required data from JSON File stored in public directory of the project.__
 
 Backend: ASP.NET 8 with C# 12 (RESTful API) ==> RMBackend Solution
