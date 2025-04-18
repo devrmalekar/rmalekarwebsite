@@ -80,3 +80,10 @@ Domain has it's own email setup configured correctly with required **DMRAC**, **
 ## System Architecture
 
 <img width="1498" alt="sys arch" src="https://github.com/user-attachments/assets/8e659d0e-b2c6-4d1f-9fd9-cb8d23206671" />
+
+
+
+
+## **Authors and Acknowledgment**
+
+Created by **[Rehman Malekare](https://www.rmalekar.com.np)**.
