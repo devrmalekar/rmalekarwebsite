@@ -1,0 +1,13 @@
+/* Parallax sections */
+.parallax {
+  will-change: transform;
+  /*transition: transform 0.2s ease-out;*/
+  transform: translateZ(0);
+}
+
+/* Disable parallax on mobile */
+@media (max-width: 768px) {
+  .parallax {
+    transform: none !important;
+  }
+}

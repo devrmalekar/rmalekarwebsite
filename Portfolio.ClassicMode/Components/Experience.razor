@@ -1,0 +1,77 @@
+@using Portfolio.ClassicMode.Models
+@using Portfolio.ClassicMode.Services
+@using Portfolio.Shared.Dtos
+@inject PortfolioService PortfolioService
+
+<section id="experience" class="section  parallax" data-speed="0.06">
+    <SectionHeading Title="Experience" />
+    @if (Status == LoadStatus.Loading)
+    {
+        <div class="timeline-item fade">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+                <h3 class="loading-bar"> </h3>
+                <span class="loading-bar"></span>
+            </div>
+        </div>
+    }
+    else if (Status == LoadStatus.Successs)
+    {
+        <div class="tabs fade">
+            <button class="tab @(SelectedExperienceTab == "Related" ? "active" : "")"
+                    @onclick="@(() => SelectedExperienceTab = "Related")">
+                Relevant Experience
+            </button>
+
+            <button class="tab @(SelectedExperienceTab == "Additional" ? "active" : "")"
+                    @onclick="@(() => SelectedExperienceTab = "Additional")">
+                Other Experience
+            </button>
+        </div>
+
+        var filteredExperience = Data!.Where(g => g.Type == SelectedExperienceTab).SelectMany(g => g.Experiences!);
+
+        @foreach (var exp in filteredExperience.OrderByDescending(e => e.StartDate))
+        {
+            <div class="timeline-item fade">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content fade">
+                    <h3>@exp.Position — @exp.CompanyName</h3>
+                    <h4>@exp.CompanyAddress</h4>
+                    <span>@exp.StartDate.ToString("MMM yyyy") - @((exp.EndDate == null) ? "Present" :
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        @exp.EndDate!.Value.ToString("MMM yyyy"))</span>
+                    </div>
+                </div>
+            }
+        }
+    else
+        {
+            <div class="timeline-item fade">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h3>Experience - API Revisiting Memories 📚 </h3>
+                    <span>My experience timeline is loading its highlights. Please Try again soon.</span>
+                </div>
+            </div>
+        }
+    </section>
+
+@code {
+    private LoadStatus Status = LoadStatus.Loading;
+    private string SelectedExperienceTab = "Related";
+    private IEnumerable<ExpereinceGroupDto>? Data;
+
+    protected override async Task OnInitializedAsync()
+    {
+        try
+        {
+            Data = await PortfolioService.GetExperienceAsync();
+
+            Status = (Data is null) ? LoadStatus.Error : LoadStatus.Successs;
+        }
+        catch
+        {
+            Status = LoadStatus.Error;
+        }
+    }
+}

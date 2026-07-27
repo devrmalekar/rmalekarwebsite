@@ -1,0 +1,26 @@
+@page "/"
+@using Portfolio.ClassicMode.Components
+
+<Hero />
+<Projects />
+<Skills />
+<About />
+<Experience />
+<Certifications />
+<Qualifications />
+
+@code {
+    [Inject]
+    private IJSRuntime Js { get; set; }
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            await Js.InvokeVoidAsync("parallax.init");
+        }
+        else
+        {
+            await Js.InvokeVoidAsync("parallax.refresh");
+        }
+    }
+}

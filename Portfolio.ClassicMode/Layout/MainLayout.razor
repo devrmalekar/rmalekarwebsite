@@ -1,0 +1,43 @@
+﻿@using Portfolio.ClassicMode.Components
+@inherits LayoutComponentBase
+<div class="layout">
+    <NavMenu />
+
+    <main class="content-body">
+        @Body
+    </main>
+
+    <Footer />
+</div>
+<style>
+    .layout {
+        justify-items: center;
+        min-height: 100vh;
+    }
+
+    .content-body {
+        /*flex: 1;
+  padding: 2rem;*/
+        margin-top: 80px;
+    }
+</style>
+
+@code {
+    [Inject] IJSRuntime Js { get; set; }
+    [Inject] NavigationManager Nav { get; set; }
+    private IJSObjectReference? module;
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            module = await Js.InvokeAsync<IJSObjectReference>("import", "./js/hashScroll.js");
+        }
+        Uri? uri = Nav.ToAbsoluteUri(Nav.Uri);
+        if (!string.IsNullOrEmpty(uri.Fragment))
+        {
+            var id = uri.Fragment.TrimStart("#").ToString();
+            await module!.InvokeVoidAsync("scrollToHash", id);
+        }
+
+    }
+}

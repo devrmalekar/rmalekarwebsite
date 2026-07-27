@@ -1,0 +1,11 @@
+@using Portfolio.ClassicMode.Configuration
+@inject ResumeConfig ResumeConfig
+<div class="section-heading fade">
+    <h2>@Title!.ToUpper()</h2>
+    <a href="@ResumeConfig.Url" data-tip="Download Resume (PDF)" class="resume-icon tooltip" rel="noopener noreferrer">
+        <i class="fas fa-file-arrow-down"></i>
+    </a>
+</div>
+@code {
+    [Parameter] public string? Title { get; set; }
+}

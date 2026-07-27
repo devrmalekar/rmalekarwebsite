@@ -1,0 +1,89 @@
+@using Portfolio.ClassicMode.Models
+@using Portfolio.ClassicMode.Services
+@using Portfolio.Shared.Dtos
+@using Portfolio.ClassicMode.Configuration
+@inject PortfolioService PortfolioService
+@inject ResumeConfig ResumeConfig
+<section id="hero" class="section   parallax" data-speed="0.12">
+    <div class="hero-content fade">
+        @if (Status == LoadStatus.Loading)
+        {
+            <a href="#" class="loading-bar" target="_blank">
+            </a>
+
+            <a href="#" class="loading-bar"" target=" _blank">
+            </a>
+
+            <a href="#" class="loading-bar" target="_blank">
+            </a>
+
+            <a href="#" class="loading-bar">
+            </a>
+        }
+        else if (Status == LoadStatus.Successs)
+        {
+            <h1 class="fade">@Data!.FirstName @Data!.LastName</h1>
+            <h2 class="fade">@Data.Headline</h2>
+            <p class="fade">@Data!.Summary</p>
+
+            <div class="hero-meta fade">
+                <span><i class="fas fa-map-marker-alt"></i>@(Data.Address ?? "Australia")</span>
+                <span><i class="fas fa-briefcase"></i>Open to Full-TIme Software Engineering Opportunities</Span>
+
+                <span><i class="fas fa-certificate"></i>@Data.HighestQualification</span>
+                <span><i class="fas fa-certificate"></i>@Data.LatestSpecializedCert</span>
+            </div>
+
+            <div class="hero-actions fade">
+                <a href="#projects" class="btn fade"><i class="fas fa-code"></i>View Projects</a>
+                <a href="@ResumeConfig.Url" class="btn fade" download="rehman-resume.pdf">
+                    <i class="fas fa-file-pdf"></i> Download Resume
+                </a>
+            </div>
+
+      
+            <div class="social-icons fade">
+                <a href="https://www.linkedin.com/in/dev-rehman-malekar/" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+
+                <a href="@Data!.Github" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a>
+
+                <a href="@Data.Hackerrank" target="_blank">
+                    <i class="fab fa-hackerrank"></i>
+                </a>
+                <a href="mailto:dev@rmalekar.com.np">
+                    <i class="fas fa-envelope"></i>
+                </a>
+
+            </div>
+        }
+        else
+        {
+            <div class="fade">
+                <h3>Social Link 📜 - API trying hard to socialize 😅 </h3>
+                <span>Looks like my API trying to connect after last hangover. Please try again in a moment.</span>
+            </div>
+        }
+    </div>
+</section>
+
+@code
+{
+    private HeroDto? Data;
+    private LoadStatus Status = LoadStatus.Loading;
+    protected override async Task OnInitializedAsync()
+    {
+        try
+        {
+            Data = await PortfolioService.GetHeroDetailAsync();
+            Status = (Data is null) ? LoadStatus.Error : LoadStatus.Successs;
+        }
+        catch
+        {
+            Status = LoadStatus.Error;
+        }
+    }
+}

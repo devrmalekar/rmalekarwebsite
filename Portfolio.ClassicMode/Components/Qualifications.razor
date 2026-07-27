@@ -1,0 +1,69 @@
+﻿@using Portfolio.ClassicMode.Models
+@using Portfolio.ClassicMode.Services
+@using Portfolio.Shared.Dtos
+@inject PortfolioService PortfolioService
+
+<section id="qualifications" class="section parallax" data-speed="0.06">
+    <SectionHeading Title="Academic Qualification" />
+
+    @if (Status == LoadStatus.Loading)
+    {
+        <div class="grid">
+            <div class="timeline-item fade">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h3 class="loading-bar"></h3>
+                    <p class="loading-bar"></p>
+                    <p class="loading-bar"></p>
+                </div>
+            </div>
+        </div>
+    }
+    else if (Status == LoadStatus.Successs)
+    {
+        <div class="grid">
+            @foreach (var q in Data!)
+            {
+                <div class="timeline-item fade">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>@q.Title</h3>
+                        <p>@q.Institute - @q.Address</p>
+                        <p>@q.StartDate.ToString("MMM yyyy") — @q.EndDate.ToString("MMM yyyy")</p>
+                    </div>
+                </div>
+            }
+        </div>
+
+    }
+    else
+    {
+        <div class="grid">
+            <div class="timeline-item fade">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h3>Qualifications - API Cross-Checking My Achievements 🎓</h3>
+                    <p>Looks like my academic milestone are being verified. They'll appear once the API finishes its check.
+                    </p>
+                </div>
+            </div>
+        </div>
+    }
+</section>
+
+@code {
+    private IEnumerable<QualificationDto>? Data;
+    private LoadStatus Status = LoadStatus.Error;
+    protected override async Task OnInitializedAsync()
+    {
+        try
+        {
+            Data = await PortfolioService.GetQualificationsAsync();
+            Status = (Data is null) ? LoadStatus.Error : LoadStatus.Successs;
+        }
+        catch
+        {
+            Status = LoadStatus.Error;
+        }
+    }
+}

@@ -1,0 +1,113 @@
+﻿@using Portfolio.ClassicMode.Models
+@using Portfolio.ClassicMode.Services
+@using Portfolio.Shared.Dtos
+@inject PortfolioService PortfolioService
+
+<section id="skills" class="section  parallax" data-speed="0.07">
+    <SectionHeading Title="Skills" />
+    @if (Status is LoadStatus.Loading)
+    {
+        <div class="skillcards-container fade ">
+            <div class="skillcards-category ">
+
+                <div class="skillcards-grid">
+
+                    <div class="skillcard fade">
+                        <h3 class="loading-bar"></h3>
+
+                        <div class="skillcard-items">
+                            <div class="skillcard-item">
+                                <i class="loading-bar"></i>
+                                <span class="loading-bar"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+    else if (Status == LoadStatus.Successs)
+    {
+            @foreach (SkillAccordionDto skillAccord in Data!) //(int index = 0; index < SkillAccordions!.Count(); index++)
+            {
+                bool isOpen = false;
+
+                //var i = index;
+                isOpen = SelectedSkillTabIndex == skillAccord.DisplayOrder;
+            <div class="skillcards-container fade">
+
+                <div class="tabs">
+                    <button class="tab skillcard-category  @(isOpen ? "active" : "")"
+                            @onclick="@(() => ToggleSkillCategory(skillAccord.DisplayOrder))">
+                        <span>@skillAccord.Category</span>
+                        <span class="@(isOpen ? "fas fa-sort-up" : "fas fa-sort-down")"></span>
+                    </button>
+                </div>
+                @if (isOpen)
+                {
+                    <div class="skillcard-items fade">
+                        @foreach (var skill in skillAccord.Skills)
+                        {
+                            <div class="skillcard-item fade ">
+                                <i class="@skill.SkillLogo"></i>
+                                <span>@skill.Name</span>
+                            </div>
+                        }
+                    </div>
+                }
+            </div>
+
+            }
+    }
+
+    else
+    {
+        <div class="skillcards-container">
+            <section class="skillcards-category fade">
+
+                <div class="skillcards-grid">
+
+                    <div class="skillcard">
+                        <h3>Skills - API Sharpening Tools. ⚙️</h3>
+
+                        <div class="skillcard-items">
+                            <div class="skillcard-item">
+                                <span>My Skillset is getting a quick polish. It'll be ready to display in a moment.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    }
+</section>
+
+
+
+@code {
+    private List<SkillAccordionDto>? Data;
+    private LoadStatus Status = LoadStatus.Loading;
+    private int SelectedSkillTabIndex = 1;
+    //private List<(string AccordionName, int DisplayOrder)>? SkillAccordions; //["Core Technical Skills", "Software Engineering & Best Practices",
+                                           //"Problem-Solving & Analysis", "Tools & Environment", "Soft Skills"];
+
+    private void ToggleSkillCategory(int index)
+    {
+        SelectedSkillTabIndex = index;
+        //Console.WriteLine($"Selected tab is {index}");
+
+        StateHasChanged();
+    }
+    protected override async Task OnInitializedAsync()
+    {
+        try
+        {
+            Data = await PortfolioService.GetSkillsAsync();
+            Status = (Data is null) ? LoadStatus.Error : LoadStatus.Successs;
+        }
+        catch
+        {
+            Status = LoadStatus.Error;
+        }
+    }
+}

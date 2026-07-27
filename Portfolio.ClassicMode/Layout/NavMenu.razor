@@ -1,0 +1,89 @@
+﻿@inject IJSRuntime JS
+<nav class="navbar">
+    <!-- Mobile Toggle Button -->
+    <button class="nav-toggle" @onclick="ToggleMenu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </button>
+
+    <div class="nav-center @(isNavOpen ? "open" : "")">
+        <a href="#hero" class="@(ActiveSection == "hero" ? "active" : "")"
+           @onclick="@(() => OnNavItemClick("hero"))">Home</a>
+
+        <a href="#projects" class="@(ActiveSection == "projects" ? "active" : "")"
+           @onclick="@(() => OnNavItemClick("projects"))">Projects</a>
+
+        <a href="#skills" class="@(ActiveSection == "skills" ? "active" : "")"
+           @onclick="@(() => OnNavItemClick("skills"))">Skills</a>
+
+        <a href="#about" class="@(ActiveSection == "about" ? "active" : "")"
+           @onclick="@(() => OnNavItemClick("about"))">About</a>
+
+        <a href="#experience" class="@(ActiveSection == "experience" ? "active" : "")"
+           @onclick="@(() => OnNavItemClick("experience"))">Experience</a>
+
+        <a href="#certifications" class="@(ActiveSection == "certifications" ? "active" : "")"
+           @onclick="@(() => OnNavItemClick("certifications"))">Certifications</a>
+
+        <a href="#qualifications" class="@(ActiveSection == "certifications" ? "active" : "")"
+           @onclick="@(() => OnNavItemClick("qualifications"))">Qualifications</a>
+    </div>
+</nav>
+
+@code {
+    private string ActiveSection = "hero";
+
+    private bool isNavOpen = false;
+
+    private void SetActive(string id)
+    {
+        ActiveSection = id;
+    }
+
+    private void ToggleMenu()
+    {
+        isNavOpen = !isNavOpen;
+    }
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            await Task.Delay(1000);
+            await JS.InvokeVoidAsync("registerScrollWatcher", DotNetObjectReference.Create(this));
+            await JS.InvokeVoidAsync("nav.registerOutsideClick", DotNetObjectReference.Create(this));
+            StateHasChanged();
+        }
+    }
+
+    /* private async Task StartScrollWatcher()
+      {
+          while (true)
+          {
+              ActiveSection = await JS.InvokeAsync<string>("getActiveSection");
+              StateHasChanged();
+              await Task.Delay(100); // smooth updates
+          }
+      }*/
+
+    private void OnNavItemClick(string id)
+    { SetActive(id); isNavOpen = false; }
+
+    [JSInvokable]
+    public void UpdateActiveSection(string id)
+    {
+        ActiveSection = id;
+        //Console.WriteLine("From razor: " + ActiveSection);
+        StateHasChanged();
+    }
+
+    [JSInvokable]
+    public void CloseNav()
+    {
+        isNavOpen = false;
+        StateHasChanged();
+    }
+
+}
+
+

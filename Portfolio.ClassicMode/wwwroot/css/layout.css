@@ -1,0 +1,269 @@
+h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+}
+
+p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+  line-height: 1.5;
+}
+
+img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+a {
+  font-weight: 600;
+  text-decoration: none;
+  color: #000;
+  font-size: 1rem;
+  color: #000;
+  transition:
+    transform 0.2s ease,
+    color 0.2s ease;
+}
+
+a.active,
+a:hover {
+  border-bottom: 2px solid #000;
+  transform: translateY(-4px);
+  color: #00aced;
+}
+
+.fullscreen {
+  height: 100vh; /* full viewport height */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.tooltip {
+  position: relative;
+  cursor: pointer;
+}
+
+.tooltip::after {
+  content: attr(data-tip);
+  position: absolute;
+  bottom: 120%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #333;
+  color: #fff;
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-size: 12px;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease;
+}
+
+.tooltip:hover::after {
+  opacity: 1;
+}
+
+/* Section styling */
+.section {
+  padding: 4rem 1.5rem;
+  max-width: 960px;
+  margin: 4rem;
+}
+
+/* SECTION HEADING Resume Icon */
+.section-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.2rem;
+}
+
+/* Grids (skills, projects, etc.) */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+/* Cards */
+.card {
+  padding: 1.25rem;
+  border-radius: 10px;
+  background: #f7f7f7;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.card-link {
+  display: block;
+  justify-items: center;
+}
+
+.card-link a {
+  text-align: center;
+  display: block;
+  max-width: fit-content;
+}
+/* Tabs (Skills ,Experience)*/
+.tabs {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.tab {
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  background: #eee;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: background 0.2s ease;
+  width: 100%;
+  text-transform: uppercase;
+  justify-content: space-between;
+  cursor: pointer;
+  display: flex;
+}
+
+.tab.active {
+  background: #444;
+  color: #fff;
+}
+
+.tab:hover {
+  background: #ddd;
+}
+
+/* Timeline for certification, qualification, experience */
+.timeline-section {
+  position: relative;
+  padding: 4rem 1.5rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.timeline-item {
+  position: relative;
+  padding-left: 2rem;
+  margin: 4rem 0;
+  /*min-height: 80vh;*/
+  /* full-screen scene */
+  display: flex;
+  align-items: center;
+}
+
+.timeline-dot {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 14px;
+  height: 14px;
+  background: #444;
+  border-radius: 50%;
+  transform: translateY(-50%);
+}
+
+.timeline-content {
+  background: #f7f7f7;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.timeline-content:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+/* Tech badges */
+.badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.75rem;
+}
+
+.badges span {
+  padding: 0.25rem 0.6rem;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  background: #e5e5e5;
+}
+
+/*  Button */
+/*  Button */
+.btn {
+  margin-top: 2rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.8rem 1.6rem;
+  background: #ffffff;
+  color: #000;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.25s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+}
+
+.resume-icon {
+  font-size: 1.6rem;
+  color: #444;
+  transition: all 0.2s ease;
+}
+
+.resume-icon:hover {
+  color: #000;
+  transform: translateY(-3px);
+}
+
+.resume-icon {
+  font-size: 1.6rem;
+  color: #444;
+  transition: all 0.2s ease;
+}
+
+.resume-icon:hover {
+  color: #000;
+  transform: translateY(-3px);
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .section {
+    padding: 3rem 1rem;
+    margin: 4rem;
+  }
+
+  .section h2 {
+    font-size: 1.5rem;
+  }
+}

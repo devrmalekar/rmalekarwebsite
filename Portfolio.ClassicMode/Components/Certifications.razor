@@ -1,0 +1,76 @@
+@using Portfolio.ClassicMode.Models
+@using Portfolio.ClassicMode.Services
+@using Portfolio.Shared.Dtos
+@inject PortfolioService PortfolioService
+<section id="certifications" class="section  parallax" data-speed="0.06">
+    <SectionHeading Title="Certification" />
+    @if (Status == LoadStatus.Loading)
+    {
+        <div class="timeline-item fade">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+                <h3 class="loading-bar"></h3>
+                <span class="loading-bar"></span>
+            </div>
+        </div>
+    }
+    else if (Status == LoadStatus.Successs)
+    {
+        @foreach (CertificationDto c in VisibleCertifications)
+        {
+            <div class="timeline-item fade">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h3>@c.Title — @c.Issuer</h3>
+                    <h4>@c.Date.ToString("MMM yyyy")</h4>
+                    <a class="btn" href="@c.Url" target="_blank">Verify</a>
+                </div>
+            </div>
+        }
+
+        @if (!ShowAllCertifications)
+        {
+            <button class="btn" @onclick="() => ShowAllCertifications = true">
+                Show More
+            </button>
+        }
+        else
+        {
+            <button class="btn" @onclick="() => ShowAllCertifications = false">
+                Show Less
+            </button>
+        }
+    }
+    else
+    {
+        <div class="timeline-item fade">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+                <h3>Certifications 📜 - API Feeling a Bit Shy 😅 </h3>
+                <span>Looks like my certificates are hiding backstage. Please try again in a moment.</span>
+            </div>
+        </div>
+    }
+</section>
+@code {
+    private IEnumerable<CertificationDto>? Data;
+    private LoadStatus Status = LoadStatus.Loading;
+    private bool ShowAllCertifications = false;
+
+    protected override async Task OnInitializedAsync()
+    {
+        try
+        {
+            Data = await PortfolioService.GetCertificationsAsync();
+            Status = (Data is null) ? LoadStatus.Error : LoadStatus.Successs;
+        }
+        catch
+        {
+            Status = LoadStatus.Error;
+        }
+    }
+
+    private IEnumerable<CertificationDto> VisibleCertifications =>
+        ShowAllCertifications ? Data!.OrderByDescending(c => c.Date)
+        : Data!.OrderByDescending(c => c.Date).Take(4);
+}

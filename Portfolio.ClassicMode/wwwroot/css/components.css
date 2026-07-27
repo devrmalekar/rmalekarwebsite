@@ -1,0 +1,23 @@
+.section {
+  padding: 6rem 1.5rem;
+  max-width: 900px;
+  margin: auto;
+}
+
+.loading-bar {
+  width: 180px;
+  height: 24px;
+  border-radius: 6px;
+  background: linear-gradient(90deg, #ddd, #f5f5f5, #ddd);
+  background-size: 200% 100%;
+  animation: loadingShimmer 1.5s infinite linear;
+}
+
+@keyframes loadingShimmer {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}

@@ -1,0 +1,52 @@
+@using Portfolio.ClassicMode.Models
+@using Portfolio.ClassicMode.Services
+@using Portfolio.Shared.Dtos
+@inject PortfolioService PortfolioService
+@if (Status == LoadStatus.Loading)
+{
+    <section id="about" class="section fullscreen  parallax" data-speed="0.08">
+        <h2 class="loading-bar"></h2>
+        <p class="loading-bar"></p>
+    </section>
+}
+else if (Status == LoadStatus.Successs)
+{
+    <section id="about" class="section  parallax" data-speed="0.08">
+        <div class="section-heading fade">
+            <h2 class="fade">INTRODUCING MYSELF</h2>
+        </div>
+        <p class="fade" style="white-space: pre-line;">@((MarkupString)Data!.Introduction)</p>
+    </section>
+}
+else
+{
+    <section id="about" class="section  parallax" data-speed="0.08">
+        <h2>About Me - API Nap 😴</h2>
+        <p>Even APIs need a quick rest before a grand introduction. Please try again soon.</p>
+    </section>
+}
+
+@code
+{
+    private LoadStatus Status = LoadStatus.Loading;
+    protected PersonalDetailDto? Data;
+    protected override async Task OnInitializedAsync()
+    {
+        try
+        {
+            Data = await PortfolioService.GetPersonalDetailAsync();
+            if (Data is null)
+            {
+                Status = LoadStatus.Error;
+            }
+            else
+            {
+                Status = LoadStatus.Successs;
+            }
+        }
+        catch
+        {
+            Status = LoadStatus.Error;
+        }
+    }
+}

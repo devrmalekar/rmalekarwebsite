@@ -1,0 +1,74 @@
+﻿@using Portfolio.ClassicMode.Models
+@using Portfolio.ClassicMode.Services
+@using Portfolio.Shared.Dtos
+@inject PortfolioService PortfolioService
+
+<section id="projects" class="section  parallax" data-speed="0.07">
+    <SectionHeading Title="Projects" />
+
+    @if (Status == LoadStatus.Loading)
+    {
+        <div class="grid">
+            <div class="card fade">
+                <img class="loading-bar" />
+                <h3 class="loading-bar"></h3>
+                <p class="loading-bar"></p>
+
+                <div class="badges">
+                    <span class="loading-bar"></span>
+                </div>
+            </div>
+        </div>
+    }
+    else if (Status == LoadStatus.Successs)
+    {
+        <div class="grid fade">
+            @foreach (ProjectDto p in Data!)
+            {
+                <div class="card fade">
+                    <img src="" alt="@p?.Title" onerror="this.src='favicon.png'" />
+                    <h3>@p?.Title</h3>
+                    <p>@p?.ProjectSummary</p>
+
+                    <div class="badges">
+                        @foreach (string t in p?.KeySkills!)
+                        {
+                            <span>@t</span>
+                        }
+                    </div>
+
+                    <div class="card-link"><a href="@p.Url" class="btn" target="_blank">View</a></div>
+                </div>
+            }
+        </div>
+    }
+    else
+    {
+        <div class="grid">
+            <div class="card fade">
+                <div class="badges">
+                    <h3>Projects - API Compiling Code 🛠️</h3>
+                    <p>My Projects are finishing a quick build. They'll appear once ready.</p>
+                </div>
+            </div>
+        </div>
+    }
+</section>
+
+@code {
+    private IEnumerable<ProjectDto>? Data;
+    private LoadStatus Status = LoadStatus.Loading;
+
+    protected override async Task OnInitializedAsync()
+    {
+        try
+        {
+            Data = await PortfolioService.GetProjectsAsync();
+            Status = (Data is null) ? LoadStatus.Error : LoadStatus.Successs;
+        }
+        catch
+        {
+            Status = LoadStatus.Error;
+        }
+    }
+}

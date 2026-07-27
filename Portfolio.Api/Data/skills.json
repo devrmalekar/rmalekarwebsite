@@ -1,0 +1,101 @@
+[
+  {
+    "Category": "Programming Languages",
+    "DisplayOrder": 1,
+    "Skills": [
+      { "Name": "C#", "SkillLogo": "devicon-csharp-plain" },
+      { "Name": "PHP", "SkillLogo": "devicon-php-plain" },
+      { "Name": "Java (Hands-on)", "SkillLogo": "devicon-java-plain" }
+    ]
+  },
+  {
+    "Category": "Frontend Development",
+    "DisplayOrder": 2,
+    "Skills": [
+      { "Name": "Blazor", "SkillLogo": "devicon-dotnetcore-plain" },
+      { "Name": "React.js (Hands-on)", "SkillLogo": "devicon-react-original" }
+    ]
+  },
+  {
+    "Category": "Backend Development",
+    "DisplayOrder": 3,
+    "Skills": [
+      { "Name": "ASP.NET Core", "SkillLogo": "devicon-dotnetcore-plain" },
+      { "Name": "Laravel", "SkillLogo": "devicon-laravel-plain" },
+      { "Name": "Node.js (Hands-on)", "SkillLogo": "devicon-nodejs-plain" },
+      {
+        "Name": "Express.js (Hands-on)",
+        "SkillLogo": "devicon-express-original"
+      },
+      { "Name": "REST APIs", "SkillLogo": "fas fa-network-wired" },
+      { "Name": "Authentication (JWT, OAuth)", "SkillLogo": "fas fa-key" },
+      { "Name": "Spring Boot (Hands-on)", "SkillLogo": "devicon-spring-plain" },
+      {
+        "Name": "Python Flask (Hands-on)",
+        "SkillLogo": "devicon-flask-original"
+      },
+      {
+        "Name": "Python Django (Hands-on)",
+        "SkillLogo": "devicon-django-plain"
+      }
+    ]
+  },
+  {
+    "Category": "Databases",
+    "DisplayOrder": 4,
+    "Skills": [
+      { "Name": "MySQL", "SkillLogo": "devicon-mysql-plain" },
+      { "Name": "SQLite", "SkillLogo": "devicon-sqlite-plain" },
+      { "Name": "SQL Server", "SkillLogo": "devicon-microsoftsqlserver-plain" }
+    ]
+  },
+  {
+    "Category": "Cloud & DevOps",
+    "DisplayOrder": 5,
+    "Skills": [
+      { "Name": "Azure", "SkillLogo": "devicon-azure-plain" },
+      { "Name": "AWS", "SkillLogo": "devicon-amazonwebservices-plain" },
+      { "Name": "Docker", "SkillLogo": "devicon-docker-plain" },
+      { "Name": "Kubernetes", "SkillLogo": "devicon-kubernetes-plain" },
+      { "Name": "Git", "SkillLogo": "devicon-git-plain" },
+      {
+        "Name": "GitHub Actions (CI/CD)",
+        "SkillLogo": "devicon-github-original"
+      },
+      { "Name": "Ansible", "SkillLogo": "devicon-ansible-plain" }
+    ]
+  },
+  {
+    "Category": "Tools & Platforms",
+    "DisplayOrder": 6,
+    "Skills": [
+      { "Name": "Visual Studio", "SkillLogo": "devicon-visualstudio-plain" },
+      { "Name": "VS Code", "SkillLogo": "devicon-vscode-plain" },
+      { "Name": "PHPStorm", "SkillLogo": "devicon-phpstorm-plain" },
+      { "Name": "Android Studio", "SkillLogo": "devicon-androidstudio-plain" },
+      { "Name": "IIS", "SkillLogo": "fas fa-server" },
+      { "Name": "Apache Tomcat", "SkillLogo": "devicon-apache-plain" },
+      { "Name": "XAMPP", "SkillLogo": "fas fa-database" }
+    ]
+  },
+  {
+    "Category": "Software Engineering",
+    "DisplayOrder": 7,
+    "Skills": [
+      { "Name": "SOLID", "SkillLogo": "fas fa-cubes" },
+      { "Name": "OOP", "SkillLogo": "fas fa-code" },
+      { "Name": "Clean Architecture", "SkillLogo": "fas fa-layer-group" },
+      { "Name": "SDLC", "SkillLogo": "fas fa-project-diagram" },
+      { "Name": "Agile", "SkillLogo": "fas fa-people-group" }
+    ]
+  },
+  {
+    "Category": "Soft Skills",
+    "DisplayOrder": 8,
+    "Skills": [
+      { "Name": "Team Collaboration", "SkillLogo": "fas fa-users" },
+      { "Name": "Communication", "SkillLogo": "fas fa-comments" },
+      { "Name": "Time Management", "SkillLogo": "fas fa-clock" }
+    ]
+  }
+]

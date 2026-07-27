@@ -1,0 +1,35 @@
+{
+  "routes": [
+    {
+      "route": "/404.html",
+      "rewrite": "/404"
+    },
+    {
+      "route": "/*",
+      "headers": {
+        "Link": "</sitemap.xml>; rel=\"sitemap\", <https://resume.example.dev>; rel=\"resume\""
+      }
+    }
+  ],
+  "navigationFallback": {
+    "rewrite": "/index.html",
+    "exclude": [
+      "/404",
+      "/robots.txt",
+      "/sitemap.xml",
+      "/site.webmanifest",
+      "/favicon.svg",
+      "/favicon.png",
+      "/images/*",
+      "/css/*",
+      "/js/*",
+      "/_framework/*"
+    ]
+  },
+  "responseOverrides": {
+    "404": {
+      "rewrite": "/404",
+      "statusCode": "404"
+    }
+  }
+}
