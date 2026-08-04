@@ -3,6 +3,7 @@
 @using Portfolio.Shared.Dtos
 @using Portfolio.ClassicMode.Configuration
 @inject PortfolioService PortfolioService
+@inject HeroBasicInfo HeroBasicInfo
 @inject ResumeConfig ResumeConfig
 <section id="hero" class="section   parallax" data-speed="0.12">
     <div class="hero-content fade">
@@ -74,11 +75,16 @@
 {
     private HeroDto? Data;
     private LoadStatus Status = LoadStatus.Loading;
+
     protected override async Task OnInitializedAsync()
     {
         try
         {
             Data = await PortfolioService.GetHeroDetailAsync();
+            if (Data is not null)
+            {
+                HeroBasicInfo.PersonalDetail = Data;
+            }
             Status = (Data is null) ? LoadStatus.Error : LoadStatus.Successs;
         }
         catch

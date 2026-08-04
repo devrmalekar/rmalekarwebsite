@@ -41,5 +41,6 @@ builder.Services.AddBlazoredLocalStorage();
 builder.Services.AddScoped<IMemoryCache, MemoryCacheService>();
 builder.Services.AddScoped<LocalStorageCacheService>();
 builder.Services.AddScoped<HybridCacheService>();
+builder.Services.AddSingleton<HeroBasicInfo>();
 
 await builder.Build().RunAsync();

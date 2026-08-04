@@ -1,7 +1,23 @@
+@using Portfolio.ClassicMode.Services
+@inject HeroBasicInfo HeroBasicInfo
 <footer class="parallax" data-speed="0.04">
     <div class="footer-content">
-        <span>© @DateTime.UtcNow.Year Rehman Malekar</span>
-        <span>Full‑Stack Developer</span>
-        <span>Built with ASP.NET Core & Blazor WASM — Hosted on Azure</span>
-    </div>
-</footer>
+        <span>© @DateTime.UtcNow.Year @FirstName @LastName</span>
+            <span>Full‑Stack Developer</span>
+            <span>Built with ASP.NET Core & Blazor WASM — Hosted on Cloud</span>
+        </div>
+    </footer>
+
+@code
+{
+    private string FirstName;
+    private string LastName;
+    protected override void OnInitialized()
+    {
+        FirstName = HeroBasicInfo.PersonalDetail?.FirstName ?? "Lorem";
+        LastName = HeroBasicInfo.PersonalDetail?.LastName ?? "Porem";
+        Console.WriteLine($"Footer.razor: HeroBasicInfo.PersonalDetail: {HeroBasicInfo.PersonalDetail?.FirstName} {HeroBasicInfo.PersonalDetail?.LastName}");
+     //   Console.WriteLine($"HeroBasicInfo.PersonalDetail: {HeroBasicInfo.PersonalDetail?.FirstName} {HeroBasicInfo.PersonalDetail?.LastName}");
+
+    }
+}
